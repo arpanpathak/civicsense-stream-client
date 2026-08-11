@@ -1,0 +1,31 @@
+[package]
+name = "pistream_client"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+# Async HTTP & streaming
+reqwest = { version = "0.12", features = ["stream"] }
+tokio = { version = "1", features = ["full"] }
+bytes = "1.0"
+futures-util = "0.3"
+
+# Image handling
+image = "0.24"
+imageproc = "0.23"
+
+# Error handling
+anyhow = "1.0"
+
+# Candle – pure Rust ML
+candle-core = "0.7"
+candle-nn = "0.7"
+candle-transformers = "0.7"
+tracing = "0.1"
+# Pin half to 2.4.x: half >= 2.5 uses rand 0.9, which breaks candle-core 0.7 (built against rand 0.8)
+half = "=2.4.1"
+
+# For tensor operations
+ndarray = "0.15"
+
