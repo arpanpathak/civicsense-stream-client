@@ -2,6 +2,12 @@
 
 A Rust client that connects to a Raspberry Pi Zero 2 W MJPEG stream, runs **YOLOv8n object detection on every frame using Candle (pure Rust ML)**, draws bounding boxes, and saves annotated frames to disk. No Python, no ONNX Runtime, no GPU required, just a single native binary.
 
+> *don't trust your vision if it's blurry,*
+> *don't rush the yellow in a hurry,*
+> *the math is proven, the call is true,*
+> *better safe than sorry, let it clear, then pass through.*
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-1.70+-orange.svg)](https://www.rust-lang.org)
 [![ML](https://img.shields.io/badge/ML-Candle%20(YOLOv8n)-D97757)](https://github.com/huggingface/candle)
